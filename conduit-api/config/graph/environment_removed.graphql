@@ -1,0 +1,11 @@
+type EnvironmentRemoved {
+    id: ID
+    environmentId: String
+    reason: String
+}
+
+type Query {
+    getEnvironmentRemoved(id: ID, at: Int): EnvironmentRemoved
+    getEnvironmentRemovedEvents(at: Int): [EnvironmentRemoved]
+    getEnvironmentRemovedByEnvironmentId(environmentId: String, at: Int): [EnvironmentRemoved]
+}

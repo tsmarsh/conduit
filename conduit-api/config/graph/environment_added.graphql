@@ -1,0 +1,13 @@
+type EnvironmentAdded {
+    id: ID
+    systemId: String
+    name: String
+    envType: String
+    region: String
+}
+
+type Query {
+    getEnvironmentAdded(id: ID, at: Int): EnvironmentAdded
+    getEnvironmentAddedEvents(at: Int): [EnvironmentAdded]
+    getEnvironmentAddedBySystemId(systemId: String, at: Int): [EnvironmentAdded]
+}

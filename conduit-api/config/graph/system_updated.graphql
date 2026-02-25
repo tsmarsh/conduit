@@ -1,0 +1,13 @@
+type SystemUpdated {
+    id: ID
+    systemId: String
+    field: String
+    oldValue: String
+    newValue: String
+}
+
+type Query {
+    getSystemUpdated(id: ID, at: Int): SystemUpdated
+    getSystemUpdatedEvents(at: Int): [SystemUpdated]
+    getSystemUpdatedBySystemId(systemId: String, at: Int): [SystemUpdated]
+}

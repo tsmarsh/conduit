@@ -1,0 +1,12 @@
+type AdvisoryResolved {
+    id: ID
+    advisoryId: String
+    resolvedBy: String
+    resolution: String
+}
+
+type Query {
+    getAdvisoryResolved(id: ID, at: Int): AdvisoryResolved
+    getAdvisoryResolvedEvents(at: Int): [AdvisoryResolved]
+    getAdvisoryResolvedByAdvisoryId(advisoryId: String, at: Int): [AdvisoryResolved]
+}

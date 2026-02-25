@@ -1,0 +1,14 @@
+type DependencyDeclared {
+    id: ID
+    fromEnvironmentId: String
+    toEnvironmentId: String
+    depType: String
+    protocol: String
+}
+
+type Query {
+    getDependencyDeclared(id: ID, at: Int): DependencyDeclared
+    getDependencyDeclaredEvents(at: Int): [DependencyDeclared]
+    getDependencyDeclaredByFrom(fromEnvironmentId: String, at: Int): [DependencyDeclared]
+    getDependencyDeclaredByTo(toEnvironmentId: String, at: Int): [DependencyDeclared]
+}

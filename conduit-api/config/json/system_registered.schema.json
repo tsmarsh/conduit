@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string" },
+    "owner": { "type": "string" },
+    "description": { "type": "string" },
+    "criticality": { "type": "string", "enum": ["critical", "high", "medium", "low"] }
+  },
+  "required": ["name", "criticality"]
+}

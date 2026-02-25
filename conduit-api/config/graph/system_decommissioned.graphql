@@ -1,0 +1,11 @@
+type SystemDecommissioned {
+    id: ID
+    systemId: String
+    reason: String
+}
+
+type Query {
+    getSystemDecommissioned(id: ID, at: Int): SystemDecommissioned
+    getSystemDecommissionedEvents(at: Int): [SystemDecommissioned]
+    getSystemDecommissionedBySystemId(systemId: String, at: Int): [SystemDecommissioned]
+}

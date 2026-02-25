@@ -1,0 +1,13 @@
+type AnnotationAdded {
+    id: ID
+    targetId: String
+    targetType: String
+    key: String
+    value: String
+}
+
+type Query {
+    getAnnotationAdded(id: ID, at: Int): AnnotationAdded
+    getAnnotationAddedEvents(at: Int): [AnnotationAdded]
+    getAnnotationAddedByTarget(targetId: String, at: Int): [AnnotationAdded]
+}

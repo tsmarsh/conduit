@@ -1,0 +1,15 @@
+type AdvisoryRaised {
+    id: ID
+    targetId: String
+    targetType: String
+    severity: String
+    rule: String
+    message: String
+}
+
+type Query {
+    getAdvisoryRaised(id: ID, at: Int): AdvisoryRaised
+    getAdvisoryRaisedEvents(at: Int): [AdvisoryRaised]
+    getAdvisoryRaisedByTarget(targetId: String, at: Int): [AdvisoryRaised]
+    getAdvisoryRaisedBySeverity(severity: String, at: Int): [AdvisoryRaised]
+}

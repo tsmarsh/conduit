@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "fromEnvironmentId": { "type": "string" },
+    "toEnvironmentId": { "type": "string" },
+    "depType": { "type": "string", "enum": ["database", "api", "messaging", "file", "network"] },
+    "protocol": { "type": "string" }
+  },
+  "required": ["fromEnvironmentId", "toEnvironmentId", "depType"]
+}

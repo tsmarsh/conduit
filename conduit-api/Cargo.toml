@@ -1,0 +1,15 @@
+[package]
+name = "conduit-api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+meshql-core = { path = "../../meshql-rs/meshql-core" }
+meshql-merkql = { path = "../../meshql-rs/meshql-merkql" }
+meshql-graphlette = { path = "../../meshql-rs/meshql-graphlette" }
+meshql-restlette = { path = "../../meshql-rs/meshql-restlette" }
+meshql-server = { path = "../../meshql-rs/meshql-server" }
+merkql = { path = "../../merkql" }
+tokio = { workspace = true }
+serde_json = { workspace = true }
+anyhow = { workspace = true }

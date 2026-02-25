@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "targetId": { "type": "string" },
+    "targetType": { "type": "string", "enum": ["system", "environment", "dependency"] },
+    "key": { "type": "string" },
+    "value": { "type": "string" }
+  },
+  "required": ["targetId", "targetType", "key", "value"]
+}

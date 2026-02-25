@@ -1,0 +1,12 @@
+type AdvisoryAcknowledged {
+    id: ID
+    advisoryId: String
+    acknowledgedBy: String
+    note: String
+}
+
+type Query {
+    getAdvisoryAcknowledged(id: ID, at: Int): AdvisoryAcknowledged
+    getAdvisoryAcknowledgedEvents(at: Int): [AdvisoryAcknowledged]
+    getAdvisoryAcknowledgedByAdvisoryId(advisoryId: String, at: Int): [AdvisoryAcknowledged]
+}

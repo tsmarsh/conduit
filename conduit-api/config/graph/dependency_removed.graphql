@@ -1,0 +1,11 @@
+type DependencyRemoved {
+    id: ID
+    dependencyId: String
+    reason: String
+}
+
+type Query {
+    getDependencyRemoved(id: ID, at: Int): DependencyRemoved
+    getDependencyRemovedEvents(at: Int): [DependencyRemoved]
+    getDependencyRemovedByDependencyId(dependencyId: String, at: Int): [DependencyRemoved]
+}

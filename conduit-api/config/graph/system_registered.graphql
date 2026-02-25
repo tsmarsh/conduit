@@ -1,0 +1,14 @@
+type SystemRegistered {
+    id: ID
+    name: String
+    owner: String
+    description: String
+    criticality: String
+}
+
+type Query {
+    getSystemRegistered(id: ID, at: Int): SystemRegistered
+    getSystemRegisteredEvents(at: Int): [SystemRegistered]
+    getSystemRegisteredByName(name: String, at: Int): [SystemRegistered]
+    getSystemRegisteredByOwner(owner: String, at: Int): [SystemRegistered]
+}
