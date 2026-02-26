@@ -19,13 +19,13 @@ jobs:
       - name: Checkout meshql-rs
         uses: actions/checkout@v4
         with:
-          repository: tsmarsh/meshql-rs
+          repository: tailoredshapes/meshql-rs
           path: meshql-rs
 
       - name: Checkout merkql
         uses: actions/checkout@v4
         with:
-          repository: tsmarsh/merkql
+          repository: tailoredshapes/merkql
           path: merkql
 
       - name: Arrange dependency paths
