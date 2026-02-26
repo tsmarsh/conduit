@@ -1,0 +1,11 @@
+project         = "conduit"
+environment     = "dev"
+location        = "eastus2"
+region_code     = "eus2"
+subscription_id = "your-subscription-id-here"
+
+# container_cpu    = 0.25
+# container_memory = "0.5Gi"
+# min_replicas     = 1
+# max_replicas     = 1
+# container_port   = 3000

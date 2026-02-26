@@ -1,0 +1,8 @@
+project     = "conduit"
+environment = "dev"
+aws_region  = "us-east-1"
+
+# container_cpu    = 256
+# container_memory = 512
+# desired_count    = 1
+# container_port   = 3000
